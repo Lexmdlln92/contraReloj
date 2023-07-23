@@ -1,0 +1,75 @@
+/*estilos generales*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height:100vh;
+    background: url(/images/spacebg.png) no-repeat center center/ cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+}
+
+/*contenedores*/
+
+.contenedor-principal{
+    width: 90vh;
+    max-width: 600px;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    border-radius: 15px;
+}
+
+.contenedor-botones{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#cronometro{
+    width: 100%;
+    font-size: 80px;
+    font-weight: bold;
+    /* para que el usuario no pueda selecionar el texto user-select */
+    user-select: none;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+/*botones*/
+
+.boton{
+    width: 80px;
+    height: 80px;
+    font-size:50px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* esto cambia el estado del boton al presionarce de verde a naranja y viseversa (i)*/
+
+#btn-iniciar-pausar.iniciar,
+#btn-iniciar-pausar.iniciar i {
+    background-color:rgb(0, 255, 0);
+    border-radius: 15px;
+}
+
+#btn-iniciar-pausar.pausar,
+#btn-iniciar-pausar.pausar i{
+    background-color:rgb(255, 204, 0);
+    border-radius: 15px;
+}
+
+#btn-reiniciar{
+    background-color:rgb(255, 0, 0);
+    border-radius: 15px;
+}
